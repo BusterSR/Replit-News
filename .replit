@@ -1,5 +1,10 @@
 run = "npm run dev"
-hidden = [".git"]
+hidden = ["*.git*", ".next"]
 
 [nix]
 channel = "stable-21_11"
+
+[deployment]
+run = ["sh", "-c", "npm run dev"]
+build = ["sh", "-c", "echo hi"]
+ignorePorts = false

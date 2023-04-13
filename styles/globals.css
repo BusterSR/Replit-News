@@ -1,27 +1,40 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background:lightblue !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --background-root: #020A1C;
+  --background-default: #0E1525;
+  --background-higher: #1C2333;
+  --background-highest: #2B3245;
+
+  --foreground-default: #F5F9FC;
+  --foreground-dimmer: #C2C8CC;
+  --foreground-dimmest: #9DA2A6;
+
+  --outline-dimmest: #2B3245;
+  --outline-dimmer: #3C445C;
+  --outline-default: #4E5569;
+  --outline-stronger: #5F677A;
+  --outline-strongest: #70788C;
+
+  --primary-dimmest: #004182;
+  --primary-dimmer: #0053A6;
+  --primary-default: #0079F2;
+  --primary-stronger: #57ABFF;
+  --primary-strongest: #B2D9FF;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-root);
+  color: var(--foreground-default);
+  font-family: 'IBM Plex Sans', sans-serif;
 }

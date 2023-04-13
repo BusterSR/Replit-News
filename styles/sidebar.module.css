@@ -1,0 +1,28 @@
+.sidebar {
+  width: clamp(100px, 12vw, 250px);
+  height: 100%;
+  background: var(--background-default);
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-right: 1px solid var(--outline-default);
+  box-shadow: 0 0 15px black;
+  line-height:2;
+
+}
+
+.link {
+  color: var(--primary-default);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 300ms;
+}
+.link:hover {
+  color: var(--primary-strongest);
+  text-shadow: 0 0 15px var(--primary-default);
+}
+

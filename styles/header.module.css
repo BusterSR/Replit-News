@@ -1,0 +1,7 @@
+.header {
+  background: var(--background-default);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--outline-default);
+  padding: 15px;
+}
