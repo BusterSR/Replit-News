@@ -1,0 +1,5 @@
+run = "npm run dev"
+hidden = [".git"]
+
+[nix]
+channel = "stable-21_11"

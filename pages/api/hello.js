@@ -1,5 +1,11 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// Use next connect
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+import nc from "next-connect" 
+
+const app = nc()
+
+app.post((req,res) => {
+  res.send("Hi, Thanks for the post request!")
+})
+
+export default app
